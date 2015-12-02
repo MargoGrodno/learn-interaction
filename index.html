@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Page</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.2.0/lodash.js"></script>
+    <script src="js/myClient.js"></script>
+</head>
+
+<body onload="run();">
+    <table id="log" border="1">
+        <tr>
+            <th>user id</th>
+            <th>message</th>
+            <th>message length</th>
+            <th>sending time</th>
+            <th>time getting</th>
+            <th>interval (ms)</th>
+        </tr>
+    </table>
+    <div id="log1"></div>
+</body>
+    <script type="text/template" id="list-template">
+        <tr>
+            <td><%=user_id%></td>
+            <td><%=text%></td>
+            <td><%=msg_length%></td>
+            <td><%=sending_time%></td>
+            <td><%=getting_time%></td>
+            <td><%=interval%></td>
+        </tr>    
+    </script>
+</html>
